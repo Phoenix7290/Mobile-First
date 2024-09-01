@@ -3,3 +3,22 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.image {
+  width: 100vw;
+  height: 80vh;
+}
+
+div>p {
+  font-size: 100%;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}

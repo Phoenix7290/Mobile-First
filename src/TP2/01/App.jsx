@@ -1,5 +1,7 @@
+import img from "./assets/image.jpg";
+
 export default function App() {
     return (
-        <div>Hello World</div>
+        <img src={img} alt="A Terra com fogo vermelho e azul" className="image"/>
     )
 }

@@ -1,0 +1,5 @@
+@media (orientation: portrait) {
+  img {
+    width: 100vw;
+  }
+}

@@ -3,3 +3,31 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.image {
+  width: 100vw;
+  height: 80vh;
+}
+
+div>p {
+  font-size: clamp(10px, 5vw, 30px);
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  min-width: 10px;
+  max-width: 100vw;
+  max-height: 20vh;
+}
+
+@media (min-width: 768px) {
+  div>p {
+    overflow: scroll;
+  }
+}

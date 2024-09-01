@@ -3,3 +3,64 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.container {
+  /* Adjust width and margin as needed */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  /* Adjust size and border-radius as needed */
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.info {
+  /* Adjust font-size, font-weight, and line-height as needed */
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.friends, .suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.friend-image, .suggestion-image {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}

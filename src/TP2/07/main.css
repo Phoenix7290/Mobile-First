@@ -3,3 +3,33 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  height: 100vh;
+  padding: 20px;
+}
+
+main>img {
+  width: 300px;
+}
+
+main>p {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  main {
+    flex-flow: row nowrap;
+  }
+
+  main>p{
+    margin-left: 5vw;
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+}
