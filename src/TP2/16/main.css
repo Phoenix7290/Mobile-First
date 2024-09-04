@@ -20,7 +20,7 @@ body {
 
 @media (min-width: 768px) {
   .main-content {
-    display: flex;
+    display: block;
   }
 }
 

@@ -26,7 +26,6 @@
 }
 
 .main-content {
-  margin-bottom: 5px;
   display: block;
 }
 
@@ -83,7 +82,7 @@
     width: 70vw;
     height: 400px;
   }
-  
+
   .related-video-item>img {
     width: 45vw;
     height: auto;
