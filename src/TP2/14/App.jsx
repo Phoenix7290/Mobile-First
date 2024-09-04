@@ -1,26 +1,25 @@
+import { useState } from "react";
 import "./main.css";
 
 export default function App() {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <div>
       <header>
         <img src="https://via.placeholder.com/50" alt="placeholder" />
-        <nav>
-          <ul>
-            <li>
-              <a href="">Perfil</a>
-            </li>
-            <li>
-              <a href="">Fotos</a>
-            </li>
-            <li>
-              <a href="">Amigos</a>
-            </li>
-            <li>
-              <a href="">Sugestoes</a>
-            </li>
-          </ul>
-        </nav>
+        <nav className="menu">
+      <button className="menu-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        ☰
+      </button>
+      <ul className={`menu-list ${isMenuOpen ? 'open' : 'closed'}`}>
+        <li>Perfil</li>
+        <li>Fotos</li>
+        <li>Amigos</li>
+        <li>Sugestoes</li>
+      </ul>
+    </nav>
       </header>
       <main>
         <section>
@@ -31,27 +30,33 @@ export default function App() {
           </div>
         </section>
         <section>
-          <p>informacoes pessoais Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem repudiandae suscipit corporis? Debitis delectus magni excepturi fugiat nobis amet temporibus ipsa blanditiis repellat! Tempora consequatur doloribus veritatis sunt omnis. Velit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore similique, nihil commodi nam deserunt doloremque qui labore repellendus odit aspernatur laboriosam quasi ab ad sunt fugit eligendi architecto praesentium numquam?</p>
+          <p>
+            Informações Pessoais é simplesmente uma simulação da indústria de impressão e tipografia. Lorem Ipsum tem sido o texto padrão da indústria desde os anos 1500.
+          </p>
         </section>
         <div>
-          <img src="https://via.placeholder.com/120" alt="placeholder" />
-          <img src="https://via.placeholder.com/120" alt="placeholder" />
+          <img src="https://via.placeholder.com/120x159" alt="placeholder" />
+          <img src="https://via.placeholder.com/120x159" alt="placeholder" />
         </div>
       </main>
       <footer>
-        <h2>Amigos</h2>
         <div>
-          <img src="https://via.placeholder.com/50" alt="placeholder" />
-          <img src="https://via.placeholder.com/50" alt="placeholder" />
-          <img src="https://via.placeholder.com/50" alt="placeholder" />
-          <img src="https://via.placeholder.com/50" alt="placeholder" />
+          <h2 className="last-titles">Amigos</h2>
+          <div>
+            <img src="https://via.placeholder.com/50" alt="placeholder" />
+            <img src="https://via.placeholder.com/50" alt="placeholder" />
+            <img src="https://via.placeholder.com/50" alt="placeholder" />
+            <img src="https://via.placeholder.com/50" alt="placeholder" />
+          </div>
         </div>
-        <h2>Sugestões</h2>
         <div>
-          <img src="https://via.placeholder.com/50" alt="placeholder" />
-          <img src="https://via.placeholder.com/50" alt="placeholder" />
-          <img src="https://via.placeholder.com/50" alt="placeholder" />
-          <img src="https://via.placeholder.com/50" alt="placeholder" />
+          <h2 className="last-titles">Sugestões</h2>
+          <div>
+            <img src="https://via.placeholder.com/50" alt="placeholder" />
+            <img src="https://via.placeholder.com/50" alt="placeholder" />
+            <img src="https://via.placeholder.com/50" alt="placeholder" />
+            <img src="https://via.placeholder.com/50" alt="placeholder" />
+          </div>
         </div>
       </footer>
     </div>

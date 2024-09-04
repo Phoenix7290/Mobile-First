@@ -11,7 +11,7 @@ const RelatedVideos = () => {
     <div className="related-videos">
       {videos.map(video => (
         <div key={video.id} className="related-video-item">
-          <img src="path_to_thumbnail.jpg" alt="thumbnail" />
+          <img src="https://via.placeholder.com/200" alt="thumbnail" />
           <div>
             <h3>{video.title}</h3>
             <p>{video.author}</p>

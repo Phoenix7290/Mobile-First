@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
 const ProductImageGallery = () => {
-  const [currentImage, setCurrentImage] = useState('image1.jpg');
-  const images = ['image1.jpg', 'image2.jpg', 'image3.jpg'];
+  const [currentImage, setCurrentImage] = useState('https://via.placeholder.com/200');
+  const images = ['https://via.placeholder.com/200', 'https://via.placeholder.com/150', 'https://via.placeholder.com/100'];
 
   return (
     <div className="image-gallery">

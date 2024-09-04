@@ -3,10 +3,7 @@ import './styles.css';
 const VideoPlayer = () => {
   return (
     <div className="video-player">
-      <video controls>
-        <source src="path_to_video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <iframe src="https://www.youtube.com/embed/MJbE3uWN9vE?si=9k0WmTiwv0gOZQXz&amp;start=55" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
   );
 };

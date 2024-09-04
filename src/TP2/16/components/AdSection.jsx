@@ -4,7 +4,7 @@ const AdSection = () => {
   return (
     <div className="ad-section">
       <p>Advertisement</p>
-      <img src="path_to_ad.jpg" alt="advertisement" />
+      <img src="https://via.placeholder.com/200" alt="advertisement" />
     </div>
   );
 };

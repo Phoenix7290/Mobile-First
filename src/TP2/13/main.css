@@ -19,6 +19,27 @@ body {
 
 h1 {
   text-align: center;
+  margin-bottom: 30px;
+}
+
+.question {
+  margin-bottom: 30px;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.question>p {
+  margin-bottom: 10px;
+}
+
+ul>li {
+  margin-bottom: 10px;
+}
+
+.answer {
+  margin-top: 10px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -32,6 +53,23 @@ h1 {
   body {
     background-color: #ffffff;
     color: #000000;
+  }
+}
+
+@media (min-width: 768px) {
+  .question {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .question>div {
+    width: 50%;
+    margin-right: 40px;
+  }
+
+  .answer {
+    margin-top: 0px;
+    flex: 1;
   }
 }
 
