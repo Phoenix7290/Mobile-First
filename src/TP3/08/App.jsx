@@ -1,5 +1,13 @@
-export default function App() {
-    return (
-        <div>Hello World</div>
-    )
+import CustomCard from './components'; 
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+
+function App() {
+  return (
+    <div className="app">
+      <CustomCard 
+      />
+    </div>
+  );
 }
+
+export default App

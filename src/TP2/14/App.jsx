@@ -23,7 +23,7 @@ export default function App() {
       </header>
       <main>
         <section>
-          <img src="https://via.placeholder.com/100" alt="placeholder" />
+          <img src="https://placehold.co/100" alt="placeholder" />
           <div>
             <h1>Nome</h1>
             <p>Email</p>
@@ -35,8 +35,8 @@ export default function App() {
           </p>
         </section>
         <div>
-          <img src="https://via.placeholder.com/120x159" alt="placeholder" />
-          <img src="https://via.placeholder.com/120x159" alt="placeholder" />
+          <img src="https://placehold.co/120x159" alt="placeholder" />
+          <img src="https://placehold.co/120x159" alt="placeholder" />
         </div>
       </main>
       <footer>

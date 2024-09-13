@@ -3,3 +3,33 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.main-content {
+  padding: 16px;
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    display: block;
+  }
+}
+
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+body.dark-mode {
+  --background-color: #181818;
+  --text-color: #ffffff;
+}
