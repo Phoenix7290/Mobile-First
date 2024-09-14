@@ -1,4 +1,3 @@
-import "./styles.css";
 import { TbMenuOrder } from "react-icons/tb";
 
 const Header = () => {

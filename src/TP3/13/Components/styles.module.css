@@ -1,0 +1,90 @@
+.containerList {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 5vw 5vw;
+  align-items: center;
+}
+
+.itemList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.containerAdd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerAdd input {
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.containerToggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemButton {
+  padding: 5px 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 100px;
+}
+
+.containerList ul {
+  width: 60vw;
+}
+
+.containerList ul li {
+  margin-bottom: 3vh;
+  background-color: white;
+}
+
+.light {
+  background-color: #fff;
+  color: #000;
+}
+
+.dark {
+  background-color: #555;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .containerList ul {
+    text-align: center;
+    width: 30vw;
+  }
+}
+
+/* @media (prefers-color-scheme: light) {
+  .itemList {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .containerAdd input {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .itemButton {
+    background-color: #fff;
+    color: #000;
+  }
+} */

@@ -8,9 +8,15 @@
   background-color:darkturquoise;
 }
 
+.menu-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .menu ul {
   list-style: none;
-  display: flex;
+  display: none;
   justify-content: space-around;
   padding: 0;
   flex-direction: column;
@@ -70,7 +76,12 @@
 }
 
 @media (min-width: 768px) {
+  #icon {
+    display: none;
+  }
+
   .menu ul {
+    display: flex;
     flex-direction: row;
   }
 
