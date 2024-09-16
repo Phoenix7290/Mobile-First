@@ -3,3 +3,34 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.app {
+  padding: 20px;
+  text-align: center;
+}
+
+.app.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.app.dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.item-voting button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.affinity-list {
+  margin-top: 20px;
+}
+
+.user-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px 0;
+}

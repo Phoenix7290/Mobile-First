@@ -1,40 +1,35 @@
-import { useState } from 'react';
-import ItemCard from './components/ItemCard';
-import AffinityList from './components/AffinityList';
-import Header from './components/Header';
-import { ThemeProvider } from 'styled-components';
-import { lightTheme, darkTheme } from './styles/theme';
-import GlobalStyles from './styles/globalStyles';
-import items from './data/items';
+import { useState } from "react";
+import ItemVoting from "./components/ItemVoting";
+import AffinityList from "./components/AffinityList";
+import ToggleTheme from "./components/ToggleTheme.jsx";
 
 const App = () => {
-  const [currentItemIndex, setCurrentItemIndex] = useState(0);
-  const [userPreferences, setUserPreferences] = useState([]);
-  const [showAffinity, setShowAffinity] = useState(false);
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState("light");
+  const [votedItems, setVotedItems] = useState([]);
+  const [view, setView] = useState("voting"); 
 
-  
+  const items = ["Movie 1", "Movie 2", "Movie 3", "Movie 4"];
 
-  const handlePreference = (liked) => {
-    setUserPreferences([...userPreferences, { item: items[currentItemIndex], liked }]);
-    setCurrentItemIndex((prevIndex) => prevIndex + 1);
+  const handleVote = (item, vote) => {
+    setVotedItems([...votedItems, { item, vote }]);
   };
 
-  const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+  const handleSwitchView = () => {
+    setView(view === "voting" ? "affinity" : "voting");
   };
 
   return (
-    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
-      <GlobalStyles />
-      <Header toggleTheme={toggleTheme} />
-      {showAffinity ? (
-        <AffinityList preferences={userPreferences} />
+    <div className={`app ${theme}`}>
+      <ToggleTheme theme={theme} setTheme={setTheme} />
+      {view === "voting" ? (
+        <ItemVoting items={items} onVote={handleVote} />
       ) : (
-        <ItemCard item={items[currentItemIndex]} onPreference={handlePreference} />
+        <AffinityList votedItems={votedItems} />
       )}
-      <button onClick={() => setShowAffinity(true)}>Ver Afinidades</button>
-    </ThemeProvider>
+      <button onClick={handleSwitchView}>
+        {view === "voting" ? "Ver afinidades" : "Voltar"}
+      </button>
+    </div>
   );
 };
 
