@@ -6,7 +6,7 @@ import ToggleTheme from "./components/ToggleTheme.jsx";
 const App = () => {
   const [theme, setTheme] = useState("light");
   const [votedItems, setVotedItems] = useState([]);
-  const [view, setView] = useState("voting"); 
+  const [view, setView] = useState("voting");
 
   const items = ["Movie 1", "Movie 2", "Movie 3", "Movie 4"];
 
