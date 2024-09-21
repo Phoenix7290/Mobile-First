@@ -23,6 +23,13 @@
   align-items: center;
 }
 
+.containerAdd select {
+  margin-left: 10px;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
 .containerAdd input {
   padding: 5px;
   margin-right: 10px;

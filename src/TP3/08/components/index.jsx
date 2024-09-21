@@ -1,9 +1,10 @@
 import Card from 'react-bootstrap/Card';
+import infnet from '../img/infnet.jpeg';
 
 function BasicExample() {
   return (
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="https://via.placeholder.com/150" />
+      <Card.Img variant="top" src={infnet} />
       <Card.Body>
         <Card.Title>Instituto Infnet</Card.Title>
         <Card.Text>
