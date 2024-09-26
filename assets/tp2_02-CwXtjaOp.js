@@ -1,0 +1,1 @@
+import{j as e,c as t,R as s}from"./client-C9r4PM53.js";const o="/TP-Mobile_First/assets/meme-CKl-I5ul.svg";function m(){return e.jsx("img",{src:o,alt:"A funny meme: How my code even worked?",className:"image"})}t.createRoot(document.getElementById("root")).render(e.jsx(s.StrictMode,{children:e.jsx(m,{})}));
